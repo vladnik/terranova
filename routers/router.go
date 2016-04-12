@@ -1,10 +1,11 @@
 package routers
 
 import (
-	"terranova/controllers"
 	"github.com/astaxie/beego"
+	"terranova/controllers"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
+	beego.Include(&controllers.ClusterController{})
 }
