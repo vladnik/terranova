@@ -8,7 +8,6 @@ import (
 )
 
 func init() {
-	orm.RegisterDriver("mysql", orm.DRMySQL)
 	orm.RegisterDataBase("default", "mysql", "root@/terranova_dev?charset=utf8")
 }
 
