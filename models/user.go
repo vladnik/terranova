@@ -15,6 +15,7 @@ type User struct {
 	Password           string    `orm:"size(128)"`
 	RecoverToken       string    `orm:"size(128)"`
 	RecoverTokenExpiry time.Time `orm:"type(datetime)"`
+	Approved           bool
 }
 
 func init() {
